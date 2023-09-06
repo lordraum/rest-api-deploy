@@ -1,0 +1,22 @@
+### All movies
+GET http://localhost:3000/movies
+
+### Crear una película con POST
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "sql": "SELECT * FROM users",
+  "title": "The Godfather",
+  "year": 1975,
+  "director": "Francis Ford Coppola",
+  "duration": 175,
+  "poster": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
+  "genre": [
+    "Crime",
+    "Drama"
+  ]
+}
+
+### Delete movie by id
+DELETE http://localhost:3000/movies/7c7eaeff-e3bd-4542-84d4-9a5050b464aa
